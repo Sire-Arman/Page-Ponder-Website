@@ -1,0 +1,92 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 100vh; */
+  }
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+}
+.cnt {
+  display: flex;
+  justify-content: space-between;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+}
+
+button {
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.book-item {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+
+.book-item:last-child {
+    border-bottom: none;
+}
+
+  
+  .book-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  .book-container h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 5px;
+  }
+  
+  .book-container p {
+    color: #666;
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  .book-container .ratings {
+    color: #ff9900;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .book-container .description {
+    color: #444;
+    font-size: 14px;
+  }

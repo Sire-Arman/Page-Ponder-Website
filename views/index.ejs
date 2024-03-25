@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") -%>
+
+<div class="container">
+  <h1>Book Notes</h1>
+  <form id="bookForm" action="/add" method="post">
+    <input type="text" id="title" name="title" placeholder="Title" required />
+    <input
+      type="text"
+      id="author"
+      name="author"
+      placeholder="Author"
+      required
+    />
+    <input
+      type="text"
+      id="rating"
+      name="rating"
+      placeholder="Rating (1-5)"
+      required
+    />
+    <textarea id="notes" name="description" placeholder="Notes"></textarea>
+    <button type="submit">Add Book</button>
+  </form>
+</div>
+<% for (let book of books) {%>
+  <div class="cnt">
+    <div class="book-container">
+      <h2><%= book.title %></h2>
+      <p>Author: <%= book.author %></p>
+      <p class="ratings">Ratings: <%= book.rating %> /5</p>
+      <p class="description"><%= book.description %></p>
+    </div>
+  </div>
+  <% } %> <%- include("partials/footer.ejs") -%>
+</di%>
